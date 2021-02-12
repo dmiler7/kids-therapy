@@ -14,7 +14,7 @@
 
     <properties>
 
-        <ktp.package.name>${project.artifactId}-${project.version}.${project.packaging}</ktp.package.name>
+        <jar.package.name>${project.artifactId}-${project.version}.${project.packaging}</jar.package.name>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -37,7 +37,7 @@
         <surefire.plugin.version>2.22.1</surefire.plugin.version>
 
         <jar.plugin.version>3.0.2</jar.plugin.version>
-        <jar.plugin.main.class>pl.dorotamiler.App</jar.plugin.main.class>
+        <jar.plugin.main.class>pl.dorotamiler.kidstherapy.App</jar.plugin.main.class>
 
         <install.plugin.version>2.5.2</install.plugin.version>
         <deploy.plugin.version>2.8.2</deploy.plugin.version>
@@ -45,7 +45,7 @@
         <project.info.report.plugin.version>3.0.0</project.info.report.plugin.version>
 
 <!--        <war.plugin.version>3.2.2</war.plugin.version>-->
-<!--        <war.plugin.main.class>pl.dorotamiler.App</war.plugin.main.class>-->
+<!--        <war.plugin.main.class>pl.dorotamiler.kidstherapy.App</war.plugin.main.class>-->
 
     </properties>
 
