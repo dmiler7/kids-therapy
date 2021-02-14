@@ -1,4 +1,4 @@
-package pl.dorotamiler;
+package pl.dorotamiler.kidstherapy;
 
 
 public class App {
