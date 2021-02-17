@@ -16,6 +16,13 @@ package pl.dorotamiler.kidstherapy;
  * the community, apart from psychological assistance.
  *
  *
+ *  For program to work please:
+ *  1. Install maven
+ *  - ubuntu: sudo apt install mvn
+ *  2. Build project:
+ *  - enter its location (follow parallel pom.xml location)
+ *  - in terminal (bash) enter:
+ *    mvn clean install (package placed in local repository .m2/repository)
  */
 
 
