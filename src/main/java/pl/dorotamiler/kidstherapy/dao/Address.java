@@ -7,6 +7,13 @@ public class Address {
     private Integer postalCode;
     private String phoneNumber;
 
+    public Address() {
+        this.street = "";
+        this.city = "";
+        this.postalCode = new Integer(0);
+        this.phoneNumber = "";
+    }
+
     public Address(String street, String city, Integer postalCode, String phoneNumber) {
         this.street = street;
         this.city = city;
