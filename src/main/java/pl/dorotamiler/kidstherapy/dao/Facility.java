@@ -9,4 +9,16 @@ public class Facility {
         this.address = new Address();
     }
 
+    public Facility(String name, Address address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
 }
