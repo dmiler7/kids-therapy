@@ -39,6 +39,10 @@ public abstract class User {
         return date;
     }
 
+    public String getPesel() {
+        return pesel;
+    }
+
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("User{");
