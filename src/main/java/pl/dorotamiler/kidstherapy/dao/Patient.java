@@ -12,7 +12,7 @@ public class Patient extends User {
         this.address = address;
     }
 
-    public Patient(String pesel){
+    public Patient(String pesel) {
         super(pesel);
     }
 
@@ -22,10 +22,9 @@ public class Patient extends User {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Patient{");
-        sb.append("address=").append(address);
-        sb.append('}');
-        return sb.toString();
+        return "Patient {" +
+                "address : " + address +
+                '}';
     }
 
     @Override

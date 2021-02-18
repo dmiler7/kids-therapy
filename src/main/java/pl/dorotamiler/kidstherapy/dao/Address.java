@@ -1,5 +1,7 @@
 package pl.dorotamiler.kidstherapy.dao;
 
+import java.util.Objects;
+
 public class Address {
 
     private String street;
@@ -45,5 +47,18 @@ public class Address {
                 ", Postal Code : " + this.postalCode +
                 ", Phone Number : " + this.phoneNumber +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Address address = (Address) o;
+        return Objects.equals(street, address.street) && Objects.equals(city, address.city) && Objects.equals(postalCode, address.postalCode) && Objects.equals(phoneNumber, address.phoneNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(street, city, postalCode, phoneNumber);
     }
 }
