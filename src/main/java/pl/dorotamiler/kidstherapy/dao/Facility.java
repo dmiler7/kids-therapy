@@ -1,6 +1,7 @@
 package pl.dorotamiler.kidstherapy.dao;
 
 public class Facility {
+
     private String name;
     private Address address;
 
@@ -20,5 +21,13 @@ public class Facility {
 
     public Address getAddress() {
         return address;
+    }
+
+    @Override
+    public String toString() {
+        return "Facility {" +
+                "Name : " + this.name +
+                ", Address : " + this.address +
+                '}';
     }
 }
