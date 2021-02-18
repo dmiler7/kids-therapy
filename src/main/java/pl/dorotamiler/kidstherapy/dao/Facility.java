@@ -1,5 +1,7 @@
 package pl.dorotamiler.kidstherapy.dao;
 
+import java.util.Objects;
+
 public class Facility {
 
     private String name;
@@ -29,5 +31,18 @@ public class Facility {
                 "Name : " + this.name +
                 ", Address : " + this.address +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Facility facility = (Facility) o;
+        return Objects.equals(name, facility.name) && Objects.equals(address, facility.address);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, address);
     }
 }
