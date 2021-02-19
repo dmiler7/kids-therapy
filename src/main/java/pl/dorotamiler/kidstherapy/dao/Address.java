@@ -44,8 +44,8 @@ public class Address {
         return "Address {" +
                 "Street : " + this.street +
                 ", City : " + this.city +
-                ", Postal Code : " + this.postalCode +
-                ", Phone Number : " + this.phoneNumber +
+                ", Postal code : " + this.postalCode +
+                ", Phone number : " + this.phoneNumber +
                 '}';
     }
 
