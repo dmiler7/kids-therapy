@@ -25,15 +25,6 @@ package pl.dorotamiler.kidstherapy;
  *  a quick and easy tool to search for specialists depending
  *  on individual child's issue.
  *
- *
- *  To start run the program:
- *  1. Install maven
- *  - ubuntu: sudo apt install mvn
- *  2. Build project:
- *  - switch to 'main' branch
- *  - enter its location (follow parallel pom.xml location)
- *  - in terminal (bash) enter:
- *    mvn clean install (package placed in local repository .m2/repository)
  */
 
 
