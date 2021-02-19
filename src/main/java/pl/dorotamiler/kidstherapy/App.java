@@ -30,6 +30,7 @@ package pl.dorotamiler.kidstherapy;
  *  1. Install maven
  *  - ubuntu: sudo apt install mvn
  *  2. Build project:
+ *  - switch to 'main' branch
  *  - enter its location (follow parallel pom.xml location)
  *  - in terminal (bash) enter:
  *    mvn clean install (package placed in local repository .m2/repository)
