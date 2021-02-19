@@ -45,13 +45,12 @@ public abstract class User {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("User{");
-        sb.append("name='").append(name).append('\'');
-        sb.append(", lastName='").append(lastName).append('\'');
-        sb.append(", date=").append(date);
-        sb.append(", pesel='").append(pesel).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return "User {" +
+                "Name : " + this.name +
+                ", Last name : " + this.lastName +
+                ", Date : " + this.date +
+                ", PESEL : " + this.pesel +
+                '}';
     }
 
     @Override
@@ -67,4 +66,3 @@ public abstract class User {
         return Objects.hash(name, lastName, date, pesel);
     }
 }
-
