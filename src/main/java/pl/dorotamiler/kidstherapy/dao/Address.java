@@ -12,7 +12,7 @@ public class Address {
     public Address() {
         this.street = "";
         this.city = "";
-        this.postalCode = new Integer(0);
+        this.postalCode = 0;
         this.phoneNumber = "";
     }
 
