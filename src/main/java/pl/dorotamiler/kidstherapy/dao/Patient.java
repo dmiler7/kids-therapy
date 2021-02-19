@@ -23,7 +23,11 @@ public class Patient extends User {
     @Override
     public String toString() {
         return "Patient {" +
-                "address : " + address +
+                "Name : " + this.getName() +
+                ", Last name : " + this.getName() +
+                ", Date : " + this.getDate() +
+                ", PESEL : " + this.getPesel() +
+                "Address : " + this.address +
                 '}';
     }
 
