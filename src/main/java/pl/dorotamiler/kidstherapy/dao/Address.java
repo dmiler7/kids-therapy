@@ -12,7 +12,7 @@ public class Address {
     public Address() {
         this.street = "";
         this.city = "";
-        this.postalCode = new Integer(0);
+        this.postalCode = 0;
         this.phoneNumber = "";
     }
 
@@ -44,8 +44,8 @@ public class Address {
         return "Address {" +
                 "Street : " + this.street +
                 ", City : " + this.city +
-                ", Postal Code : " + this.postalCode +
-                ", Phone Number : " + this.phoneNumber +
+                ", Postal code : " + this.postalCode +
+                ", Phone number : " + this.phoneNumber +
                 '}';
     }
 
