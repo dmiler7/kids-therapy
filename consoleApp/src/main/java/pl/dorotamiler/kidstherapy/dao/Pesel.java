@@ -2,9 +2,14 @@ package pl.dorotamiler.kidstherapy.dao;
 
 public class Pesel {
 
-    private String pesel;
+    private final String pesel;
 
     public Pesel(String pesel) {
+        if (pesel.length() != 11) {
+            throw new IllegalArgumentException("pesel number " +
+                    "invalid due to not accurate " +
+                    "number of digits. Please revise.");
+        }
         this.pesel = pesel;
     }
 
@@ -14,7 +19,7 @@ public class Pesel {
 
     @Override
     public String toString() {
-        return "Pesel = " +
-                +pesel;
+        return "Pesel = "
+                + pesel;
     }
 }

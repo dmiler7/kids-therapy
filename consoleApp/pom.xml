@@ -10,11 +10,6 @@
             <version>5.7.1</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-    </dependencies>
 
     <parent>
         <groupId>pl.dorotamiler</groupId>
