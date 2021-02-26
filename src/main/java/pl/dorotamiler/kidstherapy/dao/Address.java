@@ -41,11 +41,10 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address {" +
-                "Street : " + this.street +
-                ", City : " + this.city +
-                ", Postal code : " + this.postalCode +
-                ", Phone number : " + this.phoneNumber +
+        return "street : " + this.street +
+                ", city : " + this.city +
+                ", postal code : " + this.postalCode +
+                ", phone number : " + this.phoneNumber +
                 '}';
     }
 
