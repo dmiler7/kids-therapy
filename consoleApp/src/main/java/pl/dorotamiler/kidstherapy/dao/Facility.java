@@ -27,9 +27,8 @@ public class Facility {
 
     @Override
     public String toString() {
-        return "Facility {" +
-                "Name : " + this.name +
-                ", Address : " + this.address +
+        return "Facility name : " + this.name +
+                ", Address : " + this.address.toString() +
                 '}';
     }
 
