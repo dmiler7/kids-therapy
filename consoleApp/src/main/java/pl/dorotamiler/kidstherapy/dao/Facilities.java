@@ -2,7 +2,6 @@ package pl.dorotamiler.kidstherapy.dao;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Facilities {
 
@@ -12,15 +11,8 @@ public class Facilities {
         this.facilities = importFacilities();
     }
 
-    public List<Facility> getFacilities(){
+    public List<Facility> getAllFacilities() {
         return facilities;
-    }
-
-    public List<Facility> findFacilityByCity(String city) {
-        return facilities
-                .stream()
-                .filter(c->city.equals(c.getAddress().getCity()))
-                .collect(Collectors.toList());
     }
 
     private static List<Facility> importFacilities() {
