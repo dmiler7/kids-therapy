@@ -10,21 +10,27 @@ public abstract class User {
     private Date date;
     private String pesel;
 
-    public User(){
-    this.name="";
-    this.lastName="";
-    this.date=new Date();
-    this.pesel="";
+    public User() {
+        this.name = "";
+        this.lastName = "";
+        this.date = new Date();
+        this.pesel = "";
     }
 
-    public User(String pesel){
-        this.pesel=pesel;
+    public User(String pesel) {
+        if (pesel == null || "".equals(pesel) || pesel.length() != 11) {
+            throw new IllegalArgumentException("pesel " +
+                    "cannot be empty, of null value " +
+                    "and number of given digits " +
+                    "must equal 11");
+        }
+        this.pesel = pesel;
     }
 
-    public User(String name, String lastName, Date date){
+    public User(String name, String lastName, Date date) {
         this.name = name;
-        this.lastName=lastName;
-        this.date=date;
+        this.lastName = lastName;
+        this.date = date;
     }
 
     public String getName() {

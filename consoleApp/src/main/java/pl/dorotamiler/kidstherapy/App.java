@@ -46,8 +46,6 @@ import static pl.dorotamiler.kidstherapy.dao.FacilitiesService.getFacilitiesByCi
 public class App {
     public static void main(String[] args) {
 
-//        System.out.println("Hello world");
-
         String filter = "Gdansk";
         FacilitiesService facilitiesService = new FacilitiesService();
         List<Facility> facilitiesByGdansk = facilitiesService.findFacilityByCity("Gdansk");
