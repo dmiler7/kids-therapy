@@ -29,7 +29,7 @@ public class Facility {
     public String toString() {
         return "Facility {" +
                 "Name : " + this.name +
-                ", Address : " + this.address +
+                ", Address : " + this.address.toString() +
                 '}';
     }
 
