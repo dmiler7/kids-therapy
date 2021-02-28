@@ -1,4 +1,7 @@
-package pl.dorotamiler.kidstherapy.dao;
+package pl.dorotamiler.kidstherapy.service;
+
+import pl.dorotamiler.kidstherapy.domain.Facilities;
+import pl.dorotamiler.kidstherapy.domain.Facility;
 
 import java.util.List;
 import java.util.stream.Collectors;
