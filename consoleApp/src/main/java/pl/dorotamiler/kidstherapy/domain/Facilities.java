@@ -1,4 +1,4 @@
-package pl.dorotamiler.kidstherapy.dao;
+package pl.dorotamiler.kidstherapy.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,14 +8,16 @@ public class Facilities {
     private List<Facility> facilities;
 
     public Facilities() {
-        this.facilities = importFacilities();
+        if (facilities.size() == 0) {
+            this.facilities = importDefaultFacilities();
+        }
     }
 
     public List<Facility> getAllFacilities() {
         return facilities;
     }
 
-    private static List<Facility> importFacilities() {
+    private static List<Facility> importDefaultFacilities() {
         List<Facility> facilities = new ArrayList<>();
         facilities.add(new Facility("NCM Biwakowa", new Address("Biwakowa 8", "Gdansk", 80 - 299, "587312000")));
         facilities.add(new Facility("ODiTiS", new Address("Matemblewska 52", "Gdansk", 80 - 345, "583413020")));

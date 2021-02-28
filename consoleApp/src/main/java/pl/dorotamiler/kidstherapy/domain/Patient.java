@@ -1,4 +1,4 @@
-package pl.dorotamiler.kidstherapy.dao;
+package pl.dorotamiler.kidstherapy.domain;
 
 import java.util.Date;
 import java.util.Objects;

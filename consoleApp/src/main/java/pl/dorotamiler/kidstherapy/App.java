@@ -1,11 +1,10 @@
 package pl.dorotamiler.kidstherapy;
 
-import pl.dorotamiler.kidstherapy.dao.FacilitiesService;
-import pl.dorotamiler.kidstherapy.dao.Facility;
-
+import pl.dorotamiler.kidstherapy.service.FacilitiesService;
+import pl.dorotamiler.kidstherapy.domain.Facility;
 import java.util.List;
-
-import static pl.dorotamiler.kidstherapy.dao.FacilitiesService.getFacilitiesByCity;
+import static pl.dorotamiler.kidstherapy.service.FacilitiesService.getFacilitiesByCity;
+import static pl.dorotamiler.kidstherapy.dao.Menu.*;
 
 /**
  * @author dmiler7
@@ -45,10 +44,12 @@ import static pl.dorotamiler.kidstherapy.dao.FacilitiesService.getFacilitiesByCi
 
 public class App {
     public static void main(String[] args) {
-
-        String filter = "Gdansk";
-        FacilitiesService facilitiesService = new FacilitiesService();
-        List<Facility> facilitiesByGdansk = facilitiesService.findFacilityByCity("Gdansk");
-        getFacilitiesByCity(facilitiesByGdansk);
+        printMainMenu();
+        showPatientSubmenu();
+        showFacilitySubmenu();
+//        String filter = "Gdansk";
+//        FacilitiesService facilitiesService = new FacilitiesService();
+//        List<Facility> facilitiesByGdansk = facilitiesService.findFacilityByCity("Gdansk");
+//        getFacilitiesByCity(facilitiesByGdansk);
     }
 }
