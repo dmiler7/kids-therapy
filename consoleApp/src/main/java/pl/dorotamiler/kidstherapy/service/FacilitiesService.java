@@ -1,14 +1,14 @@
 package pl.dorotamiler.kidstherapy.service;
 
-import pl.dorotamiler.kidstherapy.domain.Facilities;
 import pl.dorotamiler.kidstherapy.domain.Facility;
+import pl.dorotamiler.kidstherapy.storage.FacilityDb;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class FacilitiesService {
 
-    private final List<Facility> facilities = new Facilities().getAllFacilities();
+    private final List<Facility> facilities = new FacilityDb().getAllFacilities();
 
     public List<Facility> findFacilityByCity(String city) {
         return facilities

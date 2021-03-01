@@ -1,10 +1,6 @@
 package pl.dorotamiler.kidstherapy;
 
-import pl.dorotamiler.kidstherapy.service.FacilitiesService;
-import pl.dorotamiler.kidstherapy.domain.Facility;
-import java.util.List;
-import static pl.dorotamiler.kidstherapy.service.FacilitiesService.getFacilitiesByCity;
-import static pl.dorotamiler.kidstherapy.dao.Menu.*;
+import static pl.dorotamiler.kidstherapy.domain.Menu.*;
 
 /**
  * @author dmiler7
