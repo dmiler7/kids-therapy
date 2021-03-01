@@ -1,4 +1,4 @@
-package pl.dorotamiler.kidstherapy.dao;
+package pl.dorotamiler.kidstherapy.domain;
 
 /**
  *
