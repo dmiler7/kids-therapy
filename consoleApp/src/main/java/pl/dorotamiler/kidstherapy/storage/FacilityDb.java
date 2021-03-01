@@ -19,11 +19,29 @@ public class FacilityDb {
 
     private static void importDefaultFacilities() {
         List<Facility> facilities = new ArrayList<>();
-        facilities.add(new Facility("NCM Biwakowa", new Address("Biwakowa 8", "Gdansk", 80 - 299, "587312000")));
-        facilities.add(new Facility("ODiTiS", new Address("Matemblewska 52", "Gdansk", 80 - 345, "583413020")));
-        facilities.add(new Facility("Rubikon", new Address("Portowa 4", "Gdansk", 80 - 180, "512789990")));
-        facilities.add(new Facility("Poradnia Psychologiczno-Pedagogiczna nr 1", new Address("Obywatelska 2", "Gdansk", 80 - 234, "583209871")));
-        facilities.add(new Facility("Poradnia Psychologiczno-Pedagogiczna nr 4", new Address("Obywatelska 2", "Gdynia", 80 - 003, "584559090")));
-        facilities.add(new Facility("Poradnia Psychologiczno-Pedagogiczna nr 3", new Address("Obywatelska 2", "Gdynia", 80 - 890, "583456789")));
+        facilities.add(new Facility.Builder(1, "NCM Biwakowa",
+                new Address("Biwakowa 8", "Gdansk", 80 - 299, "587312000"))
+                .isFacilityNfz(true)
+                .build());
+        facilities.add(new Facility.Builder(2, "ODiTiS",
+                new Address("Matemblewska 52", "Gdansk", 80 - 345, "583413020"))
+                .isFacilityNfz(false)
+                .build());
+        facilities.add(new Facility.Builder(3, "Rubikon",
+                new Address("Portowa 4", "Gdansk", 80 - 180, "512789990"))
+                .isFacilityNfz(false)
+                .build());
+        facilities.add(new Facility.Builder(4, "Poradnia Psychologiczno-Pedagogiczna nr 1",
+                new Address("Obywatelska 2", "Gdansk", 80 - 234, "583209871"))
+                .isFacilityNfz(true)
+                .build());
+        facilities.add(new Facility.Builder(5, "Poradnia Psychologiczno-Pedagogiczna nr 4",
+                new Address("Obywatelska 2", "Gdynia", 80 - 003, "584559090"))
+                .isFacilityNfz(true)
+                .build());
+        facilities.add(new Facility.Builder(6, "Poradnia Psychologiczno-Pedagogiczna nr 3",
+                new Address("Obywatelska 2", "Gdynia", 80 - 890, "583456789"))
+                .isFacilityNfz(true)
+                .build());
     }
 }
