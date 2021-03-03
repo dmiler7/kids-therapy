@@ -12,14 +12,12 @@ public interface FacilityDao {
 
     void add(Facility facility);
 
-    Optional<Facility> findByCity(String city);
-
     Optional<Facility> findByName(String name);
 
     Optional<Facility> findByAddress(Address address);
 
     Optional<Facility> findByPatient(Patient patient);
 
-    Optional<Facility> getByCity(String city);
+    Optional<Facility> findByCity(String city);
 
 }

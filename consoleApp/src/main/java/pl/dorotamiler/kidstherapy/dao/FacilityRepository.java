@@ -3,6 +3,7 @@ package pl.dorotamiler.kidstherapy.dao;
 import pl.dorotamiler.kidstherapy.domain.Address;
 import pl.dorotamiler.kidstherapy.domain.Facility;
 import pl.dorotamiler.kidstherapy.domain.Patient;
+import pl.dorotamiler.kidstherapy.storage.FacilityDb;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,7 +12,7 @@ public class FacilityRepository implements FacilityDao{
 
     @Override
     public List<Facility> findAllFacilities() {
-        return null;
+        return FacilityDb.getAllFacilities();
     }
 
     @Override
@@ -21,27 +22,33 @@ public class FacilityRepository implements FacilityDao{
 
     @Override
     public Optional<Facility> findByCity(String city) {
-        return Optional.empty();
+        return findAllFacilities()
+                .stream()
+                .filter(facility->facility.getAddress().getCity().equals(city))
+                .findAny();
     }
 
     @Override
     public Optional<Facility> findByName(String name) {
-        return Optional.empty();
+        return findAllFacilities()
+                .stream()
+                .filter(facility->facility.getName().equals(name))
+                .findAny();
     }
 
     @Override
-    public Optional<Facility> findByAddress(Address address) {
-        return Optional.empty();
+    public Optional<Facility> findBystalCode(Integer postalCode) {
+        return findAllFacilities()
+                .stream()
+                .filter(facility->facility.getAddress().getPostalCode().equals(postalCode))
+                .findAny();
     }
 
     @Override
-    public Optional<Facility> findByPatient(Patient patient) {
-        return Optional.empty();
+    public Optional<Facility> findByPatientsPesel(String pesel) {
+        return findAllFacilities()
+                .stream()
+                .filter(facility->facility.getPatients()..getPostalCode().equals(postalCode))
+                .findAny();
     }
-
-    @Override
-    public Optional<Facility> getByCity(String city) {
-        return Optional.empty();
-    }
-
 }
