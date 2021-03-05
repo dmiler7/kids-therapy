@@ -1,8 +1,6 @@
 package pl.dorotamiler.kidstherapy.dao;
 
-import pl.dorotamiler.kidstherapy.domain.Address;
-import pl.dorotamiler.kidstherapy.domain.Facility;
-import pl.dorotamiler.kidstherapy.domain.Patient;
+import pl.dorotamiler.kidstherapy.model.domain.Facility;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,9 +12,9 @@ public interface FacilityDao {
 
     Optional<Facility> findByName(String name);
 
-    Optional<Facility> findByAddress(Address address);
+    Optional<Facility> findByPostalCode(Integer postalCode);
 
-    Optional<Facility> findByPatient(Patient patient);
+    Optional<Facility> findByPatientsPesel(String pesel);
 
     Optional<Facility> findByCity(String city);
 
