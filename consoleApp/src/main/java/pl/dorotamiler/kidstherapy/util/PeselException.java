@@ -2,16 +2,14 @@ package pl.dorotamiler.kidstherapy.util;
 
 public class PeselException extends Throwable {
 
-    public static final int PESEL_VALIDATION_ERROR_CODE = 2000;
+    public static final int PESEL_EMPTY_OR_NULL_ERROR_CODE = 2000;
     public static final int PESEL_EXISTS_ERROR_CODE = 2001;
-    public static final int PESEL_EMPTY_OR_NULL_ERROR_CODE = 2002;
+    public static final int PESEL_VALIDATION_ERROR_CODE = 2002;
 
     private String message;
-    private int code;
 
-    PeselException(String message, int code) {
+    public PeselException(String message) {
         this.message = message;
-        this.code = code;
     }
 
 //   TODO implement this validation in User/Patient's feature in accurate place;
@@ -24,7 +22,15 @@ public class PeselException extends Throwable {
         return message;
     }
 
-    public int getCode() {
-        return code;
+    public static PeselException peselNotValid() {
+        return new PeselException("Error code: " + PESEL_VALIDATION_ERROR_CODE + " -> given pesel number :" + pesel + " is not valid due to inaccurate number of digits.");
+    }
+
+    public static PeselException peselAlreadyExists() {
+        return new PeselException("Error code: " + PESEL_EXISTS_ERROR_CODE + " -> given pesel number :" + pesel + " already exists.");
+    }
+
+    public static PeselException peselEmptyOrNull() {
+        return new PeselException("Error code: " + PESEL_EMPTY_OR_NULL_ERROR_CODE + " -> given pesel number :" + pesel + " is empty.");
     }
 }

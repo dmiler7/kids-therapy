@@ -1,8 +1,8 @@
 package pl.dorotamiler.kidstherapy.dao;
 
-import pl.dorotamiler.kidstherapy.domain.Address;
-import pl.dorotamiler.kidstherapy.domain.Facility;
-import pl.dorotamiler.kidstherapy.domain.Patient;
+import pl.dorotamiler.kidstherapy.model.domain.Address;
+import pl.dorotamiler.kidstherapy.model.domain.Facility;
+import pl.dorotamiler.kidstherapy.model.domain.Patient;
 import pl.dorotamiler.kidstherapy.storage.FacilityDb;
 
 import java.util.List;
