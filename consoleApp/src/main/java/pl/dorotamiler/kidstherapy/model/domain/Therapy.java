@@ -1,33 +1,37 @@
-package pl.dorotamiler.kidstherapy.domain;
+package pl.dorotamiler.kidstherapy.model.domain;
 
-import java.util.Objects;
+public enum Therapy {
+    NEUROLOGOPEDICS("neurologopedics"),
+    AUDITORY_ATTENTION("auditory attention training"),
+    OPTODYSLEXIA("optodyslexia therapy"),
+    HAND("hand therapy"),
+    VISION("vision therapy"),
+    WARNKE("Warnke training"),
+    SOCIAL_SKILLS("social skills training"),
+    SI("sensory integration"),
+    LOGOPEDICS("speech therapy"),
+    CPSYCHOLOGIST("clinical psychologist"),
+    PEDAGOGUE("special educator"),
+    PSYCHOTHERAPY("psychotherapy"),
+    REHABILITATION("physical therapy"),
+    SHERBORNE("developmental movement therapy by V. Sherborne"),
+    DYSLEXIA("developmental dyslexia therapy"),
+    PSYCHIATRIST("psychiatrist"),
+    PSYSIOTHERAPY("physiotherapy"),
+    OCCUPATIONAL("occupational therapy"),
+    COUNSELLING("counselling"),
+    SPSYCHOLOGIST("special psychologist"),
+    HIPPOTHERAPY("hippotherapy"),
+    HYDROTHERAPY("hydrotherapy"),
+    DOG("dog therapy");
 
-public class Therapy {
-    private String name;
+    private String therapyType;
 
-    public Therapy() {
-        this.name = name;
+    Therapy(String therapyType) {
+        this.therapyType = therapyType;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String toString() {
-        return "Type of therapy :" + name;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Therapy therapy = (Therapy) o;
-        return Objects.equals(name, therapy.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name);
+    public String getTherapyType() {
+        return therapyType;
     }
 }
