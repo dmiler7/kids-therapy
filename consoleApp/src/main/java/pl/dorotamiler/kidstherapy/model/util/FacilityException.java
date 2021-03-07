@@ -1,4 +1,4 @@
-package pl.dorotamiler.kidstherapy.util;
+package pl.dorotamiler.kidstherapy.model.util;
 
 public class FacilityException extends Throwable {
     public static final int FACILITY_NOT_FOUND_ERROR_CODE = 1000;

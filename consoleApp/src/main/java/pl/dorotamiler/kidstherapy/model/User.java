@@ -1,4 +1,4 @@
-package pl.dorotamiler.kidstherapy.domain;
+package pl.dorotamiler.kidstherapy.model;
 
 import java.util.Date;
 import java.util.Objects;
@@ -79,17 +79,17 @@ public abstract class User {
         return login;
     }
 
-    @Override
-    public String toString() {
-        return "User {" +
-                "Name : " + this.name +
-                ", Last name : " + this.lastName +
-                ", Date : " + this.date +
-                ", PESEL : " + this.pesel +
-                ", id : " + this.id +
-                ", login='" + this.login +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "User {" +
+//                "Name : " + this.name +
+//                ", Last name : " + this.lastName +
+//                ", Date : " + this.date +
+//                ", PESEL : " + this.pesel +
+//                ", id : " + this.id +
+//                ", login='" + this.login +
+//                '}';
+//    }
 
     @Override
     public boolean equals(Object o) {

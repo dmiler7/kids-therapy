@@ -1,0 +1,144 @@
+{
+  "facilities": [
+  {
+    "id": 1,
+    "name": "Centrum Rehabilitacji Ośrodek Wczesnej Interwencji",
+    "street": "Harcerska 4",
+    "city": "Gdynia",
+    "postalCode": "81-425",
+    "telephoneNumber": "58 622 07 48",
+    "isNfz": true,
+    "therapies" : [
+      {"name": "neurologopedics"},
+      {"name": "speech therapy"},
+      {"name": "clinical psychologist"},
+      {"name": "special educator"},
+      {"name": "psychotherapy"},
+      {"name": "rehabilitation"},
+      {"name": "sensory integration"},
+      {"name": "developmental movement therapy by V. Sherborne"},
+      {"name": "hand therapy"},
+      {"name": "developmental dyslexia therapy"},
+      {"name": "vision therapy"}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Centrum Rehabilitacji Ośrodek Wczesnej Interwencji Filia nr 1",
+    "street": "Augustyna Necla 11-13",
+    "city": "Gdynia",
+    "postalCode": "81-377",
+    "telephoneNumber": "58 621 74 40",
+    "isNfz": true,
+    "therapies" : [
+      {"name": "neurologopedics"},
+      {"name": "speech therapy"},
+      {"name": "clinical psychologist"},
+      {"name": "special educator"},
+      {"name": "psychiatrist"},
+      {"name": "rehabilitation"},
+      {"name": "physiotherapy"},
+      {"name": "occupational therapy"}
+    ]
+  },
+    {
+      "id": 3,
+      "name": "Poradnia Rubikon",
+      "street": "Jana Pawła II 1 G/7",
+      "city": "Gdańsk",
+      "postalCode": "80-462",
+      "telephoneNumber": "505 540 793",
+      "isNfz": false,
+      "therapies" : [
+              {"name": "speech therapy"},
+              {"name": "neurologopedics"},
+              {"name": "social skills training"},
+              {"name": "counselling"}
+        ]
+    },
+  {
+    "id": 4,
+    "name": "Ośrodek Wczesnej Interwencji i Wspomagania Rozwoju w Gdańsku",
+    "street": "Jagiellońska 11",
+    "city": "Gdańsk",
+    "postalCode": "80-351",
+    "telephoneNumber": "58 553 41 36",
+    "isNfz": true,
+    "therapies" : [
+      {"name": "speech therapy"},
+      {"name": "neurologopedics"},
+      {"name": "social skills training"},
+      {"name": "counselling"}
+    ]
+  },
+        {
+          "id": 5,
+          "name": "NZOZ Ośrodek Wczesnej Interwencji i Rehabilitacji dla Dzieci i młodzieży",
+          "street": "Chopina 15",
+          "city": "Wejherowo",
+          "postalCode": "84-200",
+          "telephoneNumber": "58 572 78 99",
+          "isNfz": false,
+          "therapies" : [
+            {"name": "neurologopedics"},
+            {"name": "special psychologist"},
+            {"name": "special educator"},
+            {"name": "rehabilitation"},
+            {"name": "hydrotherapy"},
+            {"name": "dog therapy"},
+            {"name": "hippotherapy"},
+            {"name": "occupational therapy"}
+            ]
+        },
+   {
+     "id": 6,
+     "name": "NFZ Ośrodek Wczesnej Interwencji i Rehabilitacji dla Dzieci i Młodzieży Fundacji \"Uśmiech Dziecka\"",
+     "street": "Świętego Jana 7B",
+     "city": "Wejherowo",
+     "postalCode": "84-200",
+     "telephoneNumber": "58 738 20 02",
+     "isNfz": true,
+     "therapies" : [
+       {"name": "rehabilitation"},
+       {"name": "occupational therapy"}
+     ]
+   },
+   {
+     "id": 7,
+     "name": "Poradnia Pegaz Gdańsk Suchanino",
+     "street": "Powstańców Warszawskich 69",
+     "city": "Gdańsk",
+     "postalCode": "80-170",
+     "telephoneNumber": "533 287 007",
+     "isNfz": false,
+     "therapies" : [
+       {"name": "speech therapy"},
+       {"name": "integracja sensoryczna"},
+       {"name": "special psychologist"},
+       {"name": "special educator"},
+       {"name": "rehabilitation"},
+       {"name": "physiotherapy"},
+       {"name": "occupational therapy"}
+     ]
+   },
+    {
+     "id": 8,
+     "name": "Niepubliczna Poradnia Psychologiczno-Pedagogiczna ODITIS",
+     "street": "Matemblewska 42 lok. usługowy nr 1",
+     "city": "Gdańsk",
+     "postalCode": "80-283",
+     "telephoneNumber": "602 491 421",
+     "isNfz": true,
+     "therapies" : [
+       {"name": "neurologopedics"},
+       {"name": "sensory integration"},
+       {"name": "social skills training"},
+       {"name": "Warnke training"},
+       {"name": "vision therapy"},
+       {"name": "hand therapy"},
+       {"name": "optodyslexia therapy"},
+       {"name": "auditory attention training"}
+     ]
+   }
+ ]
+}

@@ -1,6 +1,6 @@
-package pl.dorotamiler.kidstherapy.service;
+package pl.dorotamiler.kidstherapy.controller.service;
 
-import pl.dorotamiler.kidstherapy.domain.Facility;
+import pl.dorotamiler.kidstherapy.model.Facility;
 import pl.dorotamiler.kidstherapy.storage.FacilityDb;
 
 import java.util.List;

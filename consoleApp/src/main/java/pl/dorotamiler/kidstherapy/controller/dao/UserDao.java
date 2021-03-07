@@ -1,6 +1,6 @@
-package pl.dorotamiler.kidstherapy.dao;
+package pl.dorotamiler.kidstherapy.controller.dao;
 
-import pl.dorotamiler.kidstherapy.domain.User;
+import pl.dorotamiler.kidstherapy.model.User;
 
 import java.util.List;
 import java.util.Optional;

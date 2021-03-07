@@ -1,4 +1,4 @@
-package pl.dorotamiler.kidstherapy.domain;
+package pl.dorotamiler.kidstherapy.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,7 @@ public class Facility {
     private String name;
     private Address address;
     private Boolean isNfz;
+    private List<Patient> patients;
     private List<Specialist> specialists = new ArrayList<>();
     private List<Therapy> typeOfTherapies = new ArrayList<>();
 
@@ -18,6 +19,7 @@ public class Facility {
         this.name = builder.name;
         this.address = builder.address;
         this.isNfz = builder.isNfz;
+        this.patients=builder.patients;
         this.specialists = builder.specialists;
         this.typeOfTherapies = builder.typeOfTherapies;
     }
@@ -34,8 +36,17 @@ public class Facility {
         return address;
     }
 
-    public Boolean getNfz() {
+    public Boolean isNfz() {
         return isNfz;
+    }
+
+    public String getNfzInfo(boolean isNfz) {
+        return isNfz?
+                "Facility's therapies financed by the National Health Fund (NFZ)": "Facility's therapies not financed by the National Health Fund (NFZ)";
+    }
+
+    public List<Patient> getPatients() {
+        return patients;
     }
 
     public List<Specialist> getSpecialists() {
@@ -52,7 +63,7 @@ public class Facility {
                 +this.id +
                 ", Name : '" + this.name +
                 ", Address : " + this.address.toString() +
-                ", has Nfz : " + this.isNfz +
+                ", has Nfz : " + getNfzInfo() +
                 ", Specialists : " + this.specialists +
                 ", Type of offered therapies : " + this.typeOfTherapies;
     }
@@ -80,6 +91,7 @@ public class Facility {
         private String name;
         private Address address;
         private Boolean isNfz;
+        private List<Patient>patients=new ArrayList<>();
         private List<Specialist> specialists = new ArrayList<>();
         private List<Therapy> typeOfTherapies = new ArrayList<>();
 
@@ -100,6 +112,11 @@ public class Facility {
 
         public Builder isFacilityNfz(Boolean isNfz) {
             this.isNfz = isNfz;
+            return this;
+        }
+
+        public Builder withPatients(List<Patient> patients) {
+            this.patients = patients;
             return this;
         }
 

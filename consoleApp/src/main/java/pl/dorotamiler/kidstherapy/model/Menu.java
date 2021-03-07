@@ -1,4 +1,4 @@
-package pl.dorotamiler.kidstherapy.domain;
+package pl.dorotamiler.kidstherapy.model;
 
 /**
  *

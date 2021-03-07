@@ -1,4 +1,4 @@
-package pl.dorotamiler.kidstherapy.util;
+package pl.dorotamiler.kidstherapy.model.util;
 
 public enum ValidatorEnum {
 
