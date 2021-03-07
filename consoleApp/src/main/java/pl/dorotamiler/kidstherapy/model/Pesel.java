@@ -1,6 +1,6 @@
-package pl.dorotamiler.kidstherapy.model.domain;
+package pl.dorotamiler.kidstherapy.model;
 
-import pl.dorotamiler.kidstherapy.util.PeselException;
+import pl.dorotamiler.kidstherapy.model.util.PeselException;
 
 public class Pesel {
 

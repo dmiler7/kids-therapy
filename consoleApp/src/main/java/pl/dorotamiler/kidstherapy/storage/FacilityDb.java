@@ -1,7 +1,7 @@
 package pl.dorotamiler.kidstherapy.storage;
 
-import pl.dorotamiler.kidstherapy.domain.Address;
-import pl.dorotamiler.kidstherapy.domain.Facility;
+import pl.dorotamiler.kidstherapy.model.Address;
+import pl.dorotamiler.kidstherapy.model.Facility;
 
 import java.util.ArrayList;
 import java.util.List;

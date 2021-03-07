@@ -1,6 +1,10 @@
-package pl.dorotamiler.kidstherapy.model.domain;
+package pl.dorotamiler.kidstherapy.model;
 
-public enum Therapy {
+/**
+ * Therapy enumeration.
+ */
+
+public enum TherapyType {
     NEUROLOGOPEDICS("neurologopedics"),
     AUDITORY_ATTENTION("auditory attention training"),
     OPTODYSLEXIA("optodyslexia therapy"),
@@ -17,7 +21,7 @@ public enum Therapy {
     SHERBORNE("developmental movement therapy by V. Sherborne"),
     DYSLEXIA("developmental dyslexia therapy"),
     PSYCHIATRIST("psychiatrist"),
-    PSYSIOTHERAPY("physiotherapy"),
+    PHYSIOTHERAPY("physiotherapy"),
     OCCUPATIONAL("occupational therapy"),
     COUNSELLING("counselling"),
     SPSYCHOLOGIST("special psychologist"),
@@ -25,13 +29,19 @@ public enum Therapy {
     HYDROTHERAPY("hydrotherapy"),
     DOG("dog therapy");
 
-    private String therapyType;
+    private final String description;
 
-    Therapy(String therapyType) {
-        this.therapyType = therapyType;
+    TherapyType(String description) {
+        this.description = description;
     }
 
-    public String getTherapyType() {
-        return therapyType;
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public String toString() {
+        return "Therapy type : " + this.description
+                + super.toString();
     }
 }

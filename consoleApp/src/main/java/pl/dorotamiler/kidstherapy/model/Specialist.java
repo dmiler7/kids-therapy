@@ -1,4 +1,4 @@
-package pl.dorotamiler.kidstherapy.domain;
+package pl.dorotamiler.kidstherapy.model;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ public class Specialist {
     private String lastName;
     private Facility facility;
     private List<Therapy> typeOfOfferedTherapy;
+    private boolean isAvailable;
 
 
     public String getName() {

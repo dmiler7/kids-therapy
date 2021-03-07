@@ -1,14 +1,15 @@
-package pl.dorotamiler.kidstherapy.dao;
+package pl.dorotamiler.kidstherapy.controller.dao;
 
-import pl.dorotamiler.kidstherapy.model.domain.Facility;
+import pl.dorotamiler.kidstherapy.model.Facility;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface FacilityDao {
+
     List<Facility> findAllFacilities();
 
-    void add(Facility facility);
+//    void add(Facility facility);
 
     Optional<Facility> findByName(String name);
 
@@ -17,5 +18,7 @@ public interface FacilityDao {
     Optional<Facility> findByPatientsPesel(String pesel);
 
     Optional<Facility> findByCity(String city);
+
+    void persist();
 
 }

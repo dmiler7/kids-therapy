@@ -1,7 +1,7 @@
-package pl.dorotamiler.kidstherapy.repo.dao;
+package pl.dorotamiler.kidstherapy.controller.dao;
 
-import pl.dorotamiler.kidstherapy.model.domain.Pesel;
-import pl.dorotamiler.kidstherapy.util.PeselException;
+import pl.dorotamiler.kidstherapy.model.Pesel;
+import pl.dorotamiler.kidstherapy.model.util.PeselException;
 
 public class PeselRepository extends Pesel implements PeselDao {
 

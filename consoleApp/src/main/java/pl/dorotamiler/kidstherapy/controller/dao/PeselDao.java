@@ -1,4 +1,4 @@
-package pl.dorotamiler.kidstherapy.repo.dao;
+package pl.dorotamiler.kidstherapy.controller.dao;
 
 public interface PeselDao {
 

@@ -9,17 +9,17 @@
     "telephoneNumber": "58 622 07 48",
     "isNfz": true,
     "therapies" : [
-      {"name": "neurologopedia"},
-      {"name": "logopedia"},
-      {"name": "psycholog kliniczny"},
-      {"name": "pedagog specjalny"},
-      {"name": "psychoterapia"},
-      {"name": "rehabilitacja ogólnoustrojowa"},
-      {"name": "integracja sensoryczna"},
-      {"name": "terapia ruchu rozwijającego V. Sherborne"},
-      {"name": "terapia reki"},
-      {"name": "terapia dusleksji rozwojowej"},
-      {"name": "terapia widzenia"}
+      {"name": "neurologopedics"},
+      {"name": "speech therapy"},
+      {"name": "clinical psychologist"},
+      {"name": "special educator"},
+      {"name": "psychotherapy"},
+      {"name": "rehabilitation"},
+      {"name": "sensory integration"},
+      {"name": "developmental movement therapy by V. Sherborne"},
+      {"name": "hand therapy"},
+      {"name": "developmental dyslexia therapy"},
+      {"name": "vision therapy"}
     ]
   },
   {
@@ -31,14 +31,14 @@
     "telephoneNumber": "58 621 74 40",
     "isNfz": true,
     "therapies" : [
-      {"name": "neurologopedia"},
-      {"name": "logopedia"},
-      {"name": "psycholog kliniczny"},
-      {"name": "pedagog specjalny"},
-      {"name": "psychiatra"},
-      {"name": "rehabilitacja ruchowa"},
-      {"name": "fizjoterapia"},
-      {"name": "terapia zajęciowa"}
+      {"name": "neurologopedics"},
+      {"name": "speech therapy"},
+      {"name": "clinical psychologist"},
+      {"name": "special educator"},
+      {"name": "psychiatrist"},
+      {"name": "rehabilitation"},
+      {"name": "physiotherapy"},
+      {"name": "occupational therapy"}
     ]
   },
     {
@@ -50,10 +50,10 @@
       "telephoneNumber": "505 540 793",
       "isNfz": false,
       "therapies" : [
-              {"name": "logopedia"},
-              {"name": "neurologopedia"},
-              {"name": "terapia grupowa - rozwój zachowań społecznych"},
-              {"name": "konsultacja psychologiczna"}
+              {"name": "speech therapy"},
+              {"name": "neurologopedics"},
+              {"name": "social skills training"},
+              {"name": "counselling"}
         ]
     },
   {
@@ -65,10 +65,10 @@
     "telephoneNumber": "58 553 41 36",
     "isNfz": true,
     "therapies" : [
-      {"name": "logopedia"},
-      {"name": "neurologopedia"},
-      {"name": "terapia grupowa - rozwój zachowań społecznych"},
-      {"name": "konsultacja psychologiczna"}
+      {"name": "speech therapy"},
+      {"name": "neurologopedics"},
+      {"name": "social skills training"},
+      {"name": "counselling"}
     ]
   },
         {
@@ -80,14 +80,14 @@
           "telephoneNumber": "58 572 78 99",
           "isNfz": false,
           "therapies" : [
-            {"name": "neurologopedia"},
-            {"name": "psycholog specjalny"},
-            {"name": "pedagog specjalny"},
-            {"name": "rehabilitacja ruchowa"},
-            {"name": "hydroterapia"},
-            {"name": "dogoterapia"},
-            {"name": "hipoterapia"},
-            {"name": "terapia zajęciowa"}
+            {"name": "neurologopedics"},
+            {"name": "special psychologist"},
+            {"name": "special educator"},
+            {"name": "rehabilitation"},
+            {"name": "hydrotherapy"},
+            {"name": "dog therapy"},
+            {"name": "hippotherapy"},
+            {"name": "occupational therapy"}
             ]
         },
    {
@@ -99,8 +99,8 @@
      "telephoneNumber": "58 738 20 02",
      "isNfz": true,
      "therapies" : [
-       {"name": "rehabilitacja ruchowa"},
-       {"name": "terapia zajęciowa"}
+       {"name": "rehabilitation"},
+       {"name": "occupational therapy"}
      ]
    },
    {
@@ -112,13 +112,13 @@
      "telephoneNumber": "533 287 007",
      "isNfz": false,
      "therapies" : [
-       {"name": "logopedia"},
+       {"name": "speech therapy"},
        {"name": "integracja sensoryczna"},
-       {"name": "psycholog specjalny"},
-       {"name": "pedagog specjalny"},
-       {"name": "rehabilitacja ruchowa"},
-       {"name": "fizjoterapia"},
-       {"name": "terapia zajęciowa"}
+       {"name": "special psychologist"},
+       {"name": "special educator"},
+       {"name": "rehabilitation"},
+       {"name": "physiotherapy"},
+       {"name": "occupational therapy"}
      ]
    },
     {
@@ -130,14 +130,14 @@
      "telephoneNumber": "602 491 421",
      "isNfz": true,
      "therapies" : [
-       {"name": "neurologopedia"},
-       {"name": "integracja sensoryczna"},
-       {"name": "trening umiejetnosci spolecznych"},
-       {"name": "trening Warnkego"},
-       {"name": "terapia widzenia"},
-       {"name": "terapia reki"},
-       {"name": "terapia optodysleksji"},
-       {"name": "trening uwagi sluchowej"}
+       {"name": "neurologopedics"},
+       {"name": "sensory integration"},
+       {"name": "social skills training"},
+       {"name": "Warnke training"},
+       {"name": "vision therapy"},
+       {"name": "hand therapy"},
+       {"name": "optodyslexia therapy"},
+       {"name": "auditory attention training"}
      ]
    }
  ]

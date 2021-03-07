@@ -1,6 +1,6 @@
 package pl.dorotamiler.kidstherapy;
 
-import static pl.dorotamiler.kidstherapy.domain.Menu.*;
+import static pl.dorotamiler.kidstherapy.model.Menu.*;
 
 /**
  * @author dmiler7
