@@ -5,7 +5,7 @@ import java.util.Objects;
 
 import org.apache.commons.lang3.StringUtils;
 
-public abstract class User extends Role{
+public class User {
 
     private Long id;
     private String name;
@@ -35,15 +35,17 @@ public abstract class User extends Role{
 //    }
 
     public User(String ADMIN_LOGIN, String ADMIN_PASSWORD, Role adminRole) {
-        if (ADMIN_LOGIN == null || "".equals(ADMIN_LOGIN) || ADMIN_LOGIN.length() != 11) {
-            throw new IllegalArgumentException("Admin login must consist of agreed combination of letters/digits. Any other isnot accepted!");
+        if (ADMIN_LOGIN == null || "".equals(ADMIN_LOGIN)) {
+            throw new IllegalArgumentException("ADMIN_LOGIN must consist of agreed combination of letters/digits. Any other is not accepted!");
         }
-        if (ADMIN_PASSWORD == null || "".equals(ADMIN_PASSWORD) || ADMIN_PASSWORD.length() != 11) {
-            throw new IllegalArgumentException("Admin login must consist of agreed combination of letters/digits. Any other isnot accepted!");
+        if (ADMIN_PASSWORD == null || "".equals(ADMIN_PASSWORD) ){
+            throw new IllegalArgumentException("ADMIN_PASSWORD must consist of agreed combination of letters/digits. Any other is not accepted!");
+        } if (adminRole == null || "".equals(adminRole)) {
+            throw new IllegalArgumentException("Admin role must be chosen either as 'user' or 'admin'");
         }
+
         this.ADMIN_LOGIN = ADMIN_LOGIN;
         this.ADMIN_PASSWORD = ADMIN_PASSWORD;
-        this.adminRole=adminRole;
         System.out.println("Admin! Welcome to admin mode :)");
     }
 
