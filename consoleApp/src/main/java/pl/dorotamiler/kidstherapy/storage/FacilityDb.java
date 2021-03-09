@@ -36,7 +36,7 @@ public class FacilityDb {
                 .isFacilityNfz(true)
                 .build());
         facilities.add(new Facility.Builder(5, "Poradnia Psychologiczno-Pedagogiczna nr 4",
-                new Address("Obywatelska 2", "Gdynia", 80 - 003, "584559090"))
+                new Address("Obywatelska 2", "Gdynia", "80 - 003", "584559090"))
                 .isFacilityNfz(true)
                 .build());
         facilities.add(new Facility.Builder(6, "Poradnia Psychologiczno-Pedagogiczna nr 3",
