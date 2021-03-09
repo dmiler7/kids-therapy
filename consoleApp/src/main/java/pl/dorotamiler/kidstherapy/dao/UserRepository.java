@@ -1,7 +1,7 @@
 package pl.dorotamiler.kidstherapy.dao;
 
 import pl.dorotamiler.kidstherapy.domain.User;
-import pl.dorotamiler.kidstherapy.storage.UserDb;
+import pl.dorotamiler.kidstherapy.storage.PatientDb;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,7 +10,7 @@ public class UserRepository implements UserDao{
 
     @Override
     public void save(User user) {
-        UserDb.getAllUsers().add(user);
+        PatientDb.getAllUsers().add(user);
     }
 
     @Override
