@@ -1,5 +1,7 @@
 package pl.dorotamiler.kidstherapy.domain;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Objects;
 
 public class Address {
@@ -33,6 +35,13 @@ public class Address {
 
     public Integer getPostalCode() {
         return postalCode;
+    }
+
+    public void setPostalCode(Integer postalCode) {
+        if (StringUtils.isBlank(postalCode.toString())) {
+            throw new IllegalArgumentException("Postal code is not allowed to be empty");
+        }
+        this.postalCode = postalCode;
     }
 
     public String getPhoneNumber() {
